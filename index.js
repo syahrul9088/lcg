@@ -87,7 +87,7 @@ const functionVeryf = (url) => new Promise((resolve, rejected) => {
         const regist = await functionGoRegist(ip, name, email, reff)
         console.log('[+] Register sukses!!')
         console.log('[!] Mencoba mendapatkan link verif...')
-        await delay(5000)
+        await delay(10000)
         const getLink = await functionGetLink(rand, 'aminudin.me')
         console.log(`[+] Link berhasil didapatkan ${getLink}`)
         const verif = await functionVeryf(getLink)
